@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio CV</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="navbar-actions-left">
+            <button class="hamburger" id="hamburger-menu" aria-label="Open menu" tabindex="0">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="menu-icon">☰</span>
+            </button>
+            <div class="logo">My Portfolio</div>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button id="theme-toggle" class="neomorph-btn" aria-label="Toggle theme">🌙</button>
+    </nav>
+    <main>
+        <section class="hero neomorph-glossy">
+            <img src="images/me/me.png" alt="Profile" class="profile-pic glossy" style="width: 160px; height: 160px;">
+            <h1>Md Rezaul Hasan Mahadie</h1>
+            <div class="job-title">Animator &amp; Motion Designer</div>
+            <!-- <button id="download-cv">Download CV</button> --> <!-- Commented out the Download CV button -->
+        </section>
+        <section id="about" class="card neomorph">
+            <h2>About Me</h2>
+            <p>Creative animator and motion designer with a strong background in 2D/3D animation, visual storytelling,
+                and dynamic design for digital media. Experienced in delivering engaging visuals for brands, products,
+                and entertainment.</p>
+        </section>
+        <section id="skills" class="card neomorph">
+            <h2>Skills</h2>
+            <div class="skills-list">
+                <div class="skill glossy"><img src="images/icons/after_effects.png" alt="After Effects"></div>
+                <div class="skill glossy"><img src="images/icons/blender.png" alt="Blender"></div>
+                <div class="skill glossy"><img src="images/icons/unreal_engine.png" alt="Unreal Engine"></div>
+                <div class="skill glossy"><img src="images/icons/substance_painter.png" alt="Substance Painter"></div>
+            </div>
+        </section>
+        <section id="projects" class="card neomorph">
+            <h2>Projects</h2>
+            <div class="project-slider" id="projectSliderRow1" style="direction: ltr;">
+                <img src="Gifs/Go Mahadie.gif" alt="Go Mahadie">
+                <img src="Gifs/Vortex Cube.gif" alt="Vortex Cube">
+                <img src="Gifs/Isometric Boat.gif" alt="Isometric Boat">
+                <img src="Gifs/Magic Shader.gif" alt="Magic Shader">
+                <img src="Gifs/Mahadie Spiral.gif" alt="Mahadie Spiral">
+                <img src="Gifs/Pitch.gif" alt="Pitch">
+                <img src="Gifs/Cute Bot.gif" alt="Cute Bot">
+                <img src="Gifs/Ionic.gif" alt="Ionic">
+                <img src="Gifs/Cat Paw.gif" alt="Cat Paw">
+                <img src="Gifs/Star Rebeles.gif" alt="Star Rebeles">
+            </div>
+            <div class="project-slider" id="projectSliderRow2" style="direction: ltr; margin-top: 1.5rem;">
+                <img src="Gifs/Joewing.gif" alt="Joewing">
+                <img src="Gifs/Tdt.gif" alt="Tdt">
+                <img src="Gifs/Ice cream.gif" alt="Ice cream">
+                <img src="Gifs/Kings Banner.gif" alt="Kings Banner">
+                <img src="Gifs/Motion Cube and balls.gif" alt="Motion Cube and balls">
+                <img src="Gifs/StealthZi.gif" alt="StealthZi">
+                <img src="Gifs/CS2.gif" alt="CS2">
+                <img src="Gifs/Proximity M.gif" alt="Proxinity M">
+                <img src="Gifs/Can Morph.gif" alt="Can Morph">
+                <img src="Gifs/Mograph.gif" alt="Mograph">
+            </div>
+            <p style="text-align: center; margin-top: 1rem;">
+                <a href="https://dribbble.com/mahadie_art" target="_blank" rel="noopener"
+                    style="color: var(--accent); font-weight: bold; text-decoration: none;">See more works</a>
+            </p>
+        </section>
+        <section id="experience" class="card neomorph">
+            <h2>Experiences</h2>
+            <table class="education-table">
+                <tr>
+                    <th>Company</th>
+                    <th>Year</th>
+                    <th>Job Title</th>
+                    <th>Link</th>
+                </tr>
+                <tr>
+                    <td>Fiverr</td>
+                    <td>2022 – ongoing</td>
+                    <td>Motion Designer, 3D Artist</td>
+                    <td><a href="https://www.fiverr.com/mahadiehasan" target="_blank" rel="noopener">Fiverr</a></td>
+                </tr>
+                <tr>
+                    <td>Durbar Kandari</td>
+                    <td>2020 – 2021</td>
+                    <td>Vice Coordinator, Video Editing</td>
+                    <td><a href="certificates/Certificate from Durbar Kandari.pdf" target="_blank"
+                            rel="noopener">Certificate</a></td>
+                </tr>
+                <tr>
+                    <td>Eunoia Studio</td>
+                    <td>2019 – 2021</td>
+                    <td>Motion Designer</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Freelancer</td>
+                    <td>2019 – ongoing</td>
+                    <td>Animator & Motion Designer</td>
+                    <td><a href="https://www.freelancer.com/u/mahadie02" target="_blank" rel="noopener">Freelancer</a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+        <section id="education" class="card neomorph">
+            <h2>Education</h2>
+            <table class="education-table">
+                <tr>
+                    <th>Institution</th>
+                    <th>Year</th>
+                    <th>Subject</th>
+                    <th>Degree</th>
+                </tr>
+                <tr>
+                    <td>RUET</td>
+                    <td>2019–2025</td>
+                    <td>CSE</td>
+                    <td>B.Sc</td>
+                </tr>
+                <tr>
+                    <td rowspan="3">Barisal Cadet College (BCC)</td>
+                    <td>2018</td>
+                    <td>Science</td>
+                    <td>HSC</td>
+                </tr>
+                <tr>
+                    <td>2016</td>
+                    <td>Science</td>
+                    <td>SSC</td>
+                </tr>
+                <tr>
+                    <td>2014</td>
+                    <td>Science</td>
+                    <td>JSC</td>
+                </tr>
+            </table>
+        </section>
+        <section id="contact" class="card neomorph">
+            <h2>Contact</h2>
+            <div class="contact-icons">
+                <a href="mailto:mahadie02@gmail.com" class="contact-icon" title="Email" target="_blank" rel="noopener">
+                    <img src="images/icons/mail.png" alt="Mail">
+                </a>
+                <a href="http://wa.me/+8801402249426" class="contact-icon" title="WhatsApp" target="_blank"
+                    rel="noopener">
+                    <img src="images/icons/social.png" alt="WhatsApp">
+                </a>
+                <a href="https://fb.me/mahadie02" class="contact-icon" title="Messenger" target="_blank" rel="noopener">
+                    <img src="images/icons/messenger.png" alt="Messenger">
+                </a>
+                <a href="https://instagram.com/mahadie.art/" class="contact-icon" title="Instagram" target="_blank"
+                    rel="noopener">
+                    <img src="images/icons/instagram.png" alt="Instagram">
+                </a>
+            </div>
+        </section>
+    </main>
+    <footer class="footer neomorph">
+        <div class="footer-content">
+            <p>&copy; 2025 Md Rezaul Hasan Mahadie</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+</body>
+
+</html>
