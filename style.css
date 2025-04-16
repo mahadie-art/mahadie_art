@@ -255,12 +255,12 @@ nav {
     }
 
     #theme-toggle {
-        width: 44px;
-        height: 44px;
-        min-width: 44px;
-        min-height: 44px;
-        max-width: 44px;
-        max-height: 44px;
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        max-width: 50px;
+        max-height: 50px;
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -1552,7 +1552,88 @@ label {
     text-align: center;
 }
 
+#expand-projects-btn {
+    margin-top: -15px;
+}
+
 .education-table td:first-child {
     padding-left: 5px;
     padding-right: 5px;
+}
+
+
+
+
+
+/*        Projects Style         */
+.logo-projects {
+    text-align: center;
+    text-justify: center;
+    font-size: 1.8rem;
+    /* Adjust this to your preferred size */
+    color: var(--accent);
+    /* Set the specific color for "My Projects" */
+    font-weight: bold;
+    flex: 1;
+    /* Makes sure it remains centered */
+}
+
+.navbar-project-header .back-button {
+    text-decoration: none;
+}
+
+.navbar-project-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Center the text */
+    flex: 1;
+    /* Allow this to take available space */
+}
+
+.back-button {
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    /* Makes it circular */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.gif-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1050px;
+    /* Limit grid width */
+    margin: 0 auto;
+    /* Center horizontally */
+}
+
+.gif-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gif-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* 📱 Mobile: 1 column */
+@media (max-width: 600px) {
+    .gif-grid {
+        grid-template-columns: 1fr;
+    }
 }
